@@ -41,7 +41,12 @@ if not DEBUG:
 
 
 
-ALLOWED_HOSTS = ['sncfunchained.onrender.com']
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'django-sncfunchained.onrender.com',  # Ajoutez votre domaine ici
+    # vous pouvez ajouter d'autres domaines si nécessaire
+]
 
 
 # Application definition
