@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="../../static/sncfunchained/CSS/styles.css"/>
+    <title>SncfUnchained</title>
+</head>
+<body>
+    
+    <!-- HEADER SECTION START -->
+
+    <header class="header">
+        <a href="#" id="menu-bar" class="fas fa-bars" ></a>
+        <a href="#" id ="logo">Sncf <span>UNCHAINED</span></a>
+    
+        <nav class="navbar">
+            <a href="./accueil">Accueil</a>
+            <a href="./show/4">Détails</a>
+            <a href="./random">Aléatoire</a>
+        </nav>
+
+        <div class="search">
+            <input type="search" placeholder="Rechercher">
+        </div>
+    
+        <div class="icons">
+            <a class="fas fa-user-alt" href="./login"></a>
+        </div>
+        
+    </header>
+
+<!-- HEADER SECTION END -->
+
+<!-- HOME SECTION START  -->
+
+<section class="home" id="home">
+
+    <div class="box-container">
+            <div class="box">
+                <!-- <h3 class="heading">Bienvenue sur l'accueil du site SncfUnchained</h3> -->
+                <div class="frame">
+                <p>Vous pouvez consulter les prochains voyages en train du jour. </p>
+                </div>
+            </div>
+    </div>
+
+    <div class="center">
+        <div class="tableau">
+            <table>
+                <thead>
+                    <!-- On peut procéder par une boucle -->
+                    <!-- {% for trajet in trajets %}
+                        <tr>
+                            <td>{{ id }}</td>
+                                <td>{{ ville }}</td>
+                                <td>{{ depart }}</td>
+                                <td>{{ arrivee }}</td>
+                                <td><button><a href="/sncfunchained/show/{{id}}">Voir</a></button></td>
+                        </tr>
+                    {% endfor %} -->
+                    <!-- Ou tout faire manuellement  -->
+                    <tr>
+                        <th>Numéro</th>
+                        <th>Ville</th>
+                        <th>Heure de départ</th>
+                        <th>Heure d'arrivée</th>
+                        <th>Consulter les détails</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>                                       
+                        <td>{{ id4 }}</td>
+                        <td>{{ Toulouse }}</td>
+                        <td>{{ depart1 }}</td>
+                        <td>{{ arrivee4 }}</td>
+                        <td><button><a href="/sncfunchained/show/4">Voir</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>{{ id5 }}</td>
+                        <td>{{ Tours }}</td>
+                        <td>{{ depart1 }}</td>
+                        <td>{{ arrivee5 }}</td>
+                        <td><button><a href="/sncfunchained/show/5">Voir</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>{{ id6 }}</td>
+                        <td>{{ Montpellier }}</td>
+                        <td>{{ depart1 }}</td>
+                        <td>{{ arrivee6 }}</td>
+                        <td><button><a href="/sncfunchained/show/6">Voir</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>{{ id7 }}</td>
+                        <td>{{ Strasbourg }}</td>
+                        <td>{{ depart1 }}</td>
+                        <td>{{ arrivee7 }}</td>
+                        <td><button><a href="/sncfunchained/show/7">Voir</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>{{ id8 }}</td>
+                        <td>{{ LeHavre }}</td>
+                        <td>{{ depart1 }}</td>
+                        <td>{{ arrivee8 }}</td>
+                        <td><button><a href="/sncfunchained/show/8">Voir</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>{{ id9 }}</td>
+                        <td>{{ Reims }}</td>
+                        <td>{{ depart2 }}</td>
+                        <td>{{ arrivee9 }}</td>
+                        <td><button><a href="/sncfunchained/show/9">Voir</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>{{ id10 }}</td>
+                        <td>{{ Rennes }}</td>
+                        <td>{{ depart2 }}</td>
+                        <td>{{ arrivee10 }}</td>
+                        <td><button><a href="/sncfunchained/show/10">Voir</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>{{ id11 }}</td>
+                        <td>{{ Lyon }}</td>
+                        <td>{{ depart2 }}</td>
+                        <td>{{ arrivee11 }}</td>
+                        <td><button><a href="/sncfunchained/show/11">Voir</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>{{ id12 }}</td>
+                        <td>{{ Marseille }}</td>
+                        <td>{{ depart2 }}</td>
+                        <td>{{ arrivee12 }}</td>
+                        <td><button><a href="/sncfunchained/show/12">Voir</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>{{ id13 }}</td>
+                        <td>{{ Amsterdam }}</td>
+                        <td>{{ depart2 }}</td>
+                        <td>{{ arrivee13 }}</td>
+                        <td><button><a href="/sncfunchained/show/13">Voir</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>{{ id15 }}</td>
+                        <td>{{ Berlin }}</td>
+                        <td>{{ depart3 }}</td>
+                        <td>{{ arrivee15 }}</td>
+                        <td><button><a href="/sncfunchained/show/15">Voir</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>{{ id16 }}</td>
+                        <td>{{ Barcelone }}</td>
+                        <td>{{ depart3 }}</td>
+                        <td>{{ arrivee16 }}</td>
+                        <td><button><a href="/sncfunchained/show/16">Voir</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>{{ id17 }}</td>
+                        <td>{{ Milan }}</td>
+                        <td>{{ depart3 }}</td>
+                        <td>{{ arrivee17 }}</td>
+                        <td><button><a href="/sncfunchained/show/17">Voir</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>{{ id18 }}</td>
+                        <td>{{ Zurich }}</td>
+                        <td>{{ depart3 }}</td>
+                        <td>{{ arrivee18 }}</td>
+                        <td><button><a href="/sncfunchained/show/18">Voir</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>{{ id19 }}</td>
+                        <td>{{ Vienne }}</td>
+                        <td>{{ depart3 }}</td>
+                        <td>{{ arrivee19 }}</td>
+                        <td><button><a href="/sncfunchained/show/19">Voir</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>{{ id20 }}</td>
+                        <td>{{ Prague }}</td>
+                        <td>{{ depart4 }}</td>
+                        <td>{{ arrivee20 }}</td>
+                        <td><button><a href="/sncfunchained/show/20">Voir</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>{{ id21 }}</td>
+                        <td>{{ Nice }}</td>
+                        <td>{{ depart4 }}</td>
+                        <td>{{ arrivee21 }}</td>
+                        <td><button><a href="/sncfunchained/show/21">Voir</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>{{ id22 }}</td>
+                        <td>{{ Bordeaux }}</td>
+                        <td>{{ depart4 }}</td>
+                        <td>{{ arrivee22 }}</td>
+                        <td><button><a href="/sncfunchained/show/22">Voir</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>{{ id23 }}</td>
+                        <td>{{ Lille }}</td>
+                        <td>{{ depart4 }}</td>
+                        <td>{{ arrivee22 }}</td>
+                        <td><button><a href="/sncfunchained/show/23">Voir</a></button></td>
+                    </tr>
+                    <tr>
+                        <td>{{ id24 }}</td>
+                        <td>Angers</td>
+                        <td>{{ depart4 }}</td>
+                        <td>{{ arrivee22 }}</td>
+                        <td><button><a href="/sncfunchained/show/24">Voir</a></button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- HOME SECTION END  -->
+
+<!-- FOOTER  -->
+
+<footer>
+    <p>&copy; Copyright <span></span> - All rights reserved.</p>
+</footer>
+
+</body>
+
+<script src="../../sncfunchained/static/sncfunchained/JavaScript/script.js"></script>
+</html>

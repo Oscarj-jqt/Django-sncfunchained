@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page détail</title>
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="../../static/sncfunchained/CSS/styles.css"/>
+</head>
+<body>
+    <!-- HEADER SECTION START -->
+
+    <header class="header">
+        <a href="#" id="menu-bar" class="fas fa-bars" ></a>
+        <a href="#" id ="logo">Sncf <span>UNCHAINED</span></a>
+    
+        <nav class="navbar">
+            <a href="../sncfunchained/accueil">Accueil</a>
+            <a href="./show/4">Détails</a>
+            <a href="../random">Aléatoire</a>
+        </nav>
+    
+        <div class="icons">
+            <a class="fas fa-user-alt" href="./login"></a>
+        </div>
+        
+    </header>
+
+<!-- HEADER SECTION END -->
+
+</div>
+    
+    <section class="home" id="show">
+        <div class="frame">
+            <h1 class="heading"> Trajet aléatoire</h1>
+        </div>
+        <div class="center">
+            <div class="tableau">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Train</th>
+                            <th>Numéro</th>
+                            <th>Ville</th>
+                            <th>Heure de départ</th>
+                            <th>Heure d'arrivée</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- On affiche les attributs du dictionnaire itinéraire crée dans views -->
+                        <tr>
+                            <td><img src="../../static/sncfunchained/Images/image.jfif" class="image" alt="" width="" height=""></td>
+                            <td>{{ itineraire.numéro }}</td>
+                            <td>{{ itineraire.ville }}</td>
+                            <td class="time">{{ itineraire.depart }}</td>
+                            <td class="time">{{ itineraire.arrivee }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+            
+        </div>
+        <div class="links">
+            <a href="/sncfunchained/random">Nouveau</a>
+            <a href="/sncfunchained/accueil"> Accueil </a>
+        </div>
+    </section>   
+</body>
+
+<script src="../../sncfunchained/static/sncfunchained/JavaScript/script.js"></script>
+
+</html>

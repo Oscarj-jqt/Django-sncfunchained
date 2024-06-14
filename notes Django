@@ -1,0 +1,49 @@
+#django-admin startproject nom
+#python3 manage.py runserver
+#python3 manage.py startapp nom_app
+
+#python3 manage.py makemigrations permet d'importer la classe en base de donnée
+#python3 manage.py runserver
+#python3 manage.py migrate  
+
+
+#python3 manage.py shell
+#from vegetables.models import Vegetables
+#monnouveauLégume = Vegetables(5, "Courgette","33","douce","été") 
+#monnouveauLégume.save()
+#Vegetables.objects.all()
+#Vegetables.objects.all()[0]
+
+# Pour rajouter des légumes
+# cmd shell
+# from...import
+# Movies(2,"Avatar 2", "Hello World ", 2018, "#", "Cameron,").save()
+
+#admin.site.register(Sncfunchained) pour ajouter une table dans
+# Voir sa table 
+
+
+
+
+
+
+# python3 manage.py createsuperuser pour créer un compte
+
+#python3 manage.py shell
+#from sncfunchained.models import Sncfunchained
+
+# et mettre /admin dans l'url
+
+#google form à remplir à rendre sur git
+#dossier git en public, branche principale
+#fichier script avec connexion à la base donnée (1 import, save) avec 20 éléments
+# 7 avril soir
+# lister trains avec heure départ, arrivée:
+#1ere page trains accueil tableau
+#page show avec image (plan de la ligne)
+
+#page aléatoire comme page show(copier coller) mais avec l'id aléatoire; fonction all()
+#bouton js form html rechercher --> /show/2 (fonction qui recherche un id)
+#nom projet unique design original
+
+#mettre image en local (télécharger les images)
