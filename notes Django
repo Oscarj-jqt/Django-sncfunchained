@@ -47,3 +47,30 @@
 #nom projet unique design original
 
 #mettre image en local (télécharger les images)
+
+
+# Gestion de Trajets Ferroviaires
+
+# Bienvenue dans notre application de gestion de trajets ferroviaires ! Cette application permet de consulter les trajets disponibles, voir les détails de chaque trajet et générer un trajet aléatoire.
+
+# ## Fonctionnalités
+
+# - **Page d'accueil** : Consultez la liste des trajets disponibles.
+# - **Page de détails** : Cliquez sur un trajet pour voir ses informations détaillées (numéro du train, heure de départ et d'arrivée).
+# - **Page aléatoire** : Générez un trajet aléatoire.
+
+# ## Utilisation
+
+# 1. **Page d'accueil** : Accédez à l'application et parcourez la liste des trajets.
+# 2. **Page de détails** : Cliquez sur un trajet pour afficher ses détails.
+# 3. **Page aléatoire** : Cliquez sur "Trajet Aléatoire" dans le menu pour voir un trajet aléatoire.
+
+# ## Support
+
+# Pour toute question ou problème, contactez notre support à support@example.com.
+
+# ## Contribuer
+
+# Les contributions sont les bienvenues ! Soumettez une issue ou une pull request sur notre dépôt GitHub.
+
+# Merci d'utiliser notre application de gestion de trajets ferroviaires !
