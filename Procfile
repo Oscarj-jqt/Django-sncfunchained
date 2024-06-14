@@ -1,1 +1,1 @@
-web: gunicorn sncf_unchained.wsgi
+web: gunicorn mysite.wsgi:application
