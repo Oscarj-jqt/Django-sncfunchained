@@ -1,4 +1,4 @@
-Projet Hetic Django full-stack 
+Projet Hetic Django
 
 
 Gestion de Trajets Ferroviaires
